@@ -13,7 +13,19 @@
 			<div class="app-container" id="operation">
 				<!-- 搜索栏 -->
 				<div class="filter-container">
-					
+					<!-- 下拉框 -->
+					<div class="el-select filter-item el-select--medium" style="width:90px;">
+						<div id="select-dropdown" class="el-input el-input--medium el-input--suffix">
+							<input id="search" class="el-input__inner" readonly="readonly" autocomplete="off" placeholder="索引" type="text">
+							<span class="el-input__suffix">
+								<span class="el-input__suffix-inner">
+									<i class="el-select__caret el-input__icon el-icon-arrow-up">
+									</i>
+								</span>
+							</span>
+						</div>
+					</div>
+					<!-- 输入框 -->
 					<div class="filter-item el-input el-input--medium" style="width: 200px;">
 						<input id="search_text" class="el-input__inner" autocomplete="off" placeholder="搜索内容" type="text" v-model="stu">
 					</div>
